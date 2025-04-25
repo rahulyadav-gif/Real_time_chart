@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Container, Paper, TextField, Button, Box, Typography, List, ListItem, ListItemText, Divider } from '@mui/material';
 import io from 'socket.io-client';
 
-// const SocketUri = process.env.SOCKET_IO_URI
+const SocketUri = process.env.REACT_APP_SOCKET_IO_URI
 
-const socket = io(`http://localhost:3001`);
+const socket = io(`${SocketUri}`);
 
 console.log(socket)
 function App() {

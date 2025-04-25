@@ -73,6 +73,11 @@ On the backend, the Node.js server uses Express to handle HTTP requests and Sock
 
 The workflow of the application is as follows: The client initiates a WebSocket connection to the server. Upon entering a username, the client emits a 'join' event, which the server handles by adding the user to its internal list and broadcasting the updated user list and a system message. When a user sends a message, the client emits a 'message' event to the server, which then broadcasts the message to all clients. The client listens for 'message' and 'userList' events to update the chat window and online users list in real time. When a user disconnects, the server removes them from the user list and broadcasts the updated list and a system message.
 
+
+#Output
+![Image](https://github.com/user-attachments/assets/cc4e6c50-2cba-4dfb-88d0-a1737dbb09a1)
+
+
 This project demonstrates a seamless integration of frontend and backend technologies to create an interactive and real-time chat experience. The use of Socket.io ensures low-latency communication, while React and Material UI provide a user-friendly and visually appealing interface. The modular design allows easy scalability and potential feature additions such as private messaging or chat rooms.
 
 Overall, this real-time chat application showcases practical skills in full-stack development, real-time communication, and modern UI design, making it a valuable project for understanding the MERN stack and WebSocket-based applications.
